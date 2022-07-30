@@ -1,0 +1,125 @@
+:root{
+    --black: #181E27;
+    --white: #EDF7F6;
+    --dark-grey: #343d46;
+    --skin: #DFD2B8;
+    --skin-light: #ebe4d4;
+    --light-blue: #35A7FF;
+    --orange: #F3752B;
+    --brown: #4F3824;
+    --red: #FF0000;
+    --light-grey: #343d46;
+}
+body{
+    font-family: 'Kaushan Script', cursive;
+    color: var(--skin-light);
+}
+
+/* icons */
+.primary-color{
+    color:#F3752B
+}
+.info{
+    background: var(--skin-light);
+}
+
+.info h2{
+    word-spacing: 0.6rem;
+}
+.info a{
+    transition: color 0.7s ease-in-out;
+}
+.info a:hover{
+    color:var(--black);
+}
+
+/* icons end */
+/* header */
+
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/photos/pexels-chan-walrus-958545.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.height-90{
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1{
+    border-top: 6px dotted var(--skin-light);
+    border-bottom: 6px dotted var(--skin-light);
+    animation: bannerh1;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes bannerh1 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(20px);  
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+} /* animatin for when banner goes from left to right */
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-20px);  
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.main-btn{
+    color: var(--orange);
+    font-size: 2rem;
+    border: 2px solid var(--skin-light);
+    transition: all 1s ease-in-out;
+}
+.xashlama-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.main-btn:hover{
+    color: var(--red);
+    border: 2px solid var(--skin-light);
+    background-color: var(--skin-light);
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: var(--orange);
+    color: var(--black);
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: bouncing 4s infinite;
+}
+@keyframes bouncing {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
