@@ -13,11 +13,15 @@
 body{
     font-family: 'Kaushan Script', cursive;
     color: var(--skin-light);
+    background: url(/photos/pexels-igor-starkov-1055058.jpg)center/cover fixed no-repeat;
 }
 
 /* icons */
 .primary-color{
-    color:#F3752B
+    color: var(--orange)
+}
+.secondary-color{
+    color: var(--red)
 }
 .info{
     background: var(--skin-light);
@@ -123,3 +127,60 @@ body{
         transform: translateY(-10px);
     }
 }
+/* header/banner end */
+/* menu items */
+.item-container{
+    position:relative;/* for link */
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease;
+}
+.item-container:hover{
+    outline: 8px solid var(--orange);
+    outline-offset: 0.5rem;
+}
+.item-img{
+    transition: all 2s ease;
+}
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.item-link{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+    font-size: 2rem;
+    border-top: 3px solid var(--white);
+    border-bottom: 3px solid var(--white);
+    transition: 2s ease all;
+    opacity: 0;
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-link:hover{
+    color: var(--skin);
+    border: 3px solid var(--skin);
+    background: var(--skin);
+    color:var(--red)
+}
+/* menu items end */
+/* menu */
+#menu{
+    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(/photos/pexels-chan-walrus-958545.jpg)center/cover fixed no-repeat;
+}
+.special{
+    border: 4px solid var(--red);
+    position: relative;
+}
+.special-text{
+    position: absolute;
+    top:0;
+    right:4%;
+    background: var(--red);
+    padding: 0 0.4rem;
+}
+/* menu end */
