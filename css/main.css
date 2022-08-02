@@ -8,7 +8,7 @@
     --orange: #F3752B;
     --brown: #4F3824;
     --red: #FF0000;
-    --light-grey: #343d46;
+    --light-grey: #BCABAE;
 }
 body{
     font-family: 'Kaushan Script', cursive;
@@ -39,6 +39,9 @@ body{
 
 /* icons end */
 /* header */
+.title-color{
+    color:var(--white)
+}
 
 #header{
     min-height: calc(100vh - 94px);
@@ -184,3 +187,59 @@ body{
     padding: 0 0.4rem;
 }
 /* menu end */
+
+/* about */
+.about-pictures{
+    position: relative;
+}
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+.img-1{
+    left:0%;
+    top:0%;
+}
+.img-2{
+    left:20%;
+    top:20%;
+    z-index: 10;
+}
+.img-3{
+    left:40%;
+    top:45%;
+    z-index: 20;
+}
+.img-4{
+    left:40%;
+    top:0%;
+}
+.img-5{
+    left:0%;
+    top:45%;
+}
+.about-image:hover{
+    outline: 10px solid var(--red);
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
+/* about end */
+/* review */
+.review-item{
+    background: rgba(255,255,255,0.7);
+    clip-path: polygon(5% 0, 100% 0,90% 100%, 0 100%);
+}
+
+.review-img{
+    width: 150px;
+    outline: 3px solid var(--light-grey);
+}
+
+/* review end */
