@@ -243,3 +243,54 @@ body{
 }
 
 /* review end */
+/* team */
+
+.team-icons a{
+    color: var(--orange);
+    transition: all 1s ease-in-out;
+}
+.team-icons a:hover{
+    color: var(--black);
+    transform: translateY(-5px);
+}
+
+/* team end */
+/* contact */
+.height-60{
+    min-height: 60vh;
+}
+
+#contact .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 1s ease;
+}
+#contact .card:hover{
+    background: rgba(0,0,0,0.8);
+}
+#contact .card-header{
+    color: var(--red);
+}
+#contact .input-group-text{
+    background:var(--red);
+    border-color: var(--red);
+    color: var(--black);
+}
+#contact .card input{
+    color: var(--black);
+}
+#contact .card input::placeholder{
+    color: var(--black);
+}
+.contact-btn{
+    color: #EDF7F6;
+    border-color: var(--red);
+    background: transparent;
+    transition: all 1s ease-in-out;
+}
+.contact-btn:hover{
+    background-color: var(--white);
+    color: var(--red);
+    border-color: var(--red);
+
+}
+/* contact end */
