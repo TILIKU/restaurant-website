@@ -119,6 +119,11 @@ body{
     transition: all 2s ease;
     animation: bouncing 4s infinite;
 }
+.header-link:hover{
+    background:var(--skin-light);
+    border-color: var(--skin-light);
+    color: var(--red);
+}
 @keyframes bouncing {
     0%{
         transform: translateY(-10px);
@@ -187,10 +192,10 @@ body{
 .change .bar1{
     transform: rotate(-45deg) translate(-5px, 6px);
 }
-.change .bar1{
+.change .bar2{
     opacity: 0;
 }
-.change .bar1{
+.change .bar3{
     transform: rotate(45deg) translate(-5px, -8px);
 }
 
@@ -253,6 +258,10 @@ body{
 /* menu end */
 
 /* about */
+.about-small-text{
+    color:var(--light-grey)
+}
+
 .about-pictures{
     position: relative;
 }
@@ -304,6 +313,9 @@ body{
 .review-img{
     width: 150px;
     outline: 3px solid var(--light-grey);
+}
+.review-text-bottom{
+    color: var(--black);
 }
 
 /* review end */
