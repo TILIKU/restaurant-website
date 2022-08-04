@@ -131,6 +131,70 @@ body{
     }
 }
 /* header/banner end */
+/* navbar */
+
+/* overwriting bootstrap cuz flex-direction is weirdge */
+
+/* overwriting bootstrap end */
+.navbar{
+    background: var(--skin-light);
+    padding: 20px;
+    transition: all 1s ease;
+}
+.navbar-background{
+    padding:5px 20px
+}/* later with js */
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+}
+.navbar-brand:hover{
+    color:var(--black);
+}
+.nav-link{
+    color: var(--black);
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 23px;
+}
+.nav-link:hover{
+    color: var(--red);
+}
+.nav-btn{
+    background: transparent;
+    color: var(--red);
+    border: 2px solid var(--red);
+    font-size: 23px;
+    transition: all 1s ease;
+}
+.nav-btn:hover{
+    color: var(--black);
+    border: 2px solid var(--black);
+    transform: rotate(10deg);
+}
+.toggler-btn{
+    border: 2px solid var(--red);
+    padding: 5px;
+    transition: all 1s ease;
+}
+.bar{
+    width: 30px;
+    height:3px;
+    margin: 5px;
+    background: var(--black);
+    transition: all 0.5s ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar1{
+    opacity: 0;
+}
+.change .bar1{
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+/* navbar end */
 /* menu items */
 .item-container{
     position:relative;/* for link */
@@ -309,3 +373,19 @@ body{
     height: 100%;
 }
 /* contact end */
+
+/* footer  */
+
+#back-to-top{
+    background:var(--skin-light);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 70px;
+    right:10px;
+}
+
+/* footer end */
